@@ -17,17 +17,37 @@
 </header><hr>
 <main>
     <section>
-        <form>
-            <label for="fullName">Full Name</label>
-            <input type="text">
-            <br>
-            <br>
-            <label for="fullName">Email</label>
-            <input type="email">
-            <br>
-            <br>
-            <label for="contactBack">Can we contact you?</label>
-            <input type="submit">
+        <h1 style="text-decoration:underline; text-decoration-style: wavy; text-decoration-color:
+         purple;">Sign Up, Hear More!</h1>
+         <img src="Assets/SignUp.jpeg" alt="person typing on laptop" width="200px">
+        
+        <form action="/action_page.php">
+        <p style="margin-left: 200px;">
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName">
+            <br><br>
+
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName">
+            <br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="age">Are you 18 or older?</label><br>
+            <input type="radio" id="Yes" name="age" value="Yes">
+            <label for="Yes">Yes</label><br>
+            <input type="radio" id="No" name="age" value="N">
+            <label for="No">No</label>
+            <br><br>
+
+            <label for="comments">Questions? Comments? Feedback?</label><br>
+            <textarea id="comments" name="comments" rows="5" cols="50">
+            </textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+        </p>
         </form>
     </section>
 </main><hr>
